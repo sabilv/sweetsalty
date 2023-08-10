@@ -199,7 +199,7 @@
   /**
    * Portfolio details slider
    */
-  new Swiper('.portfolio-details-slider', {
+  new Swiper('.products-details-slider', {
     speed: 400,
     loop: true,
     autoplay: {
@@ -260,3 +260,15 @@
   new PureCounter();
 
 })()
+
+function getCurrentYear() {
+  var currentDate = new Date();
+  var currentYear = currentDate.getFullYear();
+  return currentYear;
+}
+
+// Get the reference to the <span> element
+var spanElement = document.getElementById("currentYear");
+
+// Call the function and set the content of the <span> element
+spanElement.textContent = getCurrentYear();
